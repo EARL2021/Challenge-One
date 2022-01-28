@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROGRAMA ENCRIPTADOR - DESENCRIPTADOR</h1>
+    <div id="cuerpo">
+        <div id="tarjeta1">
+            <div id="hijo-tarjeta1">
+                <input id="mensaje_por_descifrar" type="text" placeholder="Ingrese mensaje:" onkeypress="return validacion(event);">
+                <p id="mensaje-error"><i class="fas fa-exclamation-circle"></i>No mayusculas, caracteres ni números.</p>
+            </div>
+
+            <div id="botones">
+                <input type="button" id="encriptar" class="bot1"  onclick="enviar_texto()" value="Encriptar" >
+                <input type="button" id="desencriptar" class="bot1" value="Desencriptar" onclick="enviar_texto2()">
+            </div>
+        </div>
+
+        <div id="tarjeta2">
+            <div id="hijo-tarjeta2">
+                <input type="text" id="mensaje_desifrado" placeholder="Aqui aparecerá su mensaje encriptado/desencriptado">
+                <input id="copiar_texto" type="submit" value="Copiar" onclick="copiar()">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Challenge Oracle One. Desarrollado por <a href="https://github.com/EARL2021/EARL2021" target="_blank">Edwin Rodriguez</a></p>
+
+    </footer>
+
+    <script src="javascript/copiar.js"></script>
+    <script src="javascript/decodificar.js"></script>
+    <script src="javascript/codificar.js"></script>
+    <script src="javascript/validar.js"></script>
+</body>
+</html>
