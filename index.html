@@ -13,12 +13,12 @@
     <div id="cuerpo">
         <div id="tarjeta1">
             <div id="hijo-tarjeta1">
-                <input id="mensaje_por_descifrar" type="text" placeholder="Ingrese mensaje:" onkeypress="return validacion(event);">
+                <input id="mensaje_por_descifrar" type="text"  onkeypress="return validacion(event);" placeholder="Ingrese mensaje:">
                 <p id="mensaje-error"><i class="fas fa-exclamation-circle"></i>No mayusculas, caracteres ni números.</p>
             </div>
 
             <div id="botones">
-                <input type="button" id="encriptar" class="bot1"  onclick="enviar_texto()" value="Encriptar" >
+                <input type="button" id="encriptar" class="bot1"  value="Encriptar" onclick="botonEncriptar()"  >
                 <input type="button" id="desencriptar" class="bot1" value="Desencriptar" onclick="enviar_texto2()">
             </div>
         </div>
